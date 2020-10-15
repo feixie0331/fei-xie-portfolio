@@ -13,7 +13,19 @@ body {
 
 header {
     padding: 2rem;
+    position: fixed;
+    top: 0;
         }
+main {
+    position: relative;
+    top: 97px;
+}
+
+footer {
+    position: relative;
+    top: 97px;
+    text-align: center;
+}
 
 a {
             color: black;
@@ -66,14 +78,7 @@ nav .menu {
 }
 
 /*-----------footer---------------*/
-footer {
-    line-space: 5px;
-    display: grid;
-    place-items: center;
 
-    text-align: center;
-
-}
 
 footer h3 {
     padding: 1rem 0;
@@ -97,12 +102,18 @@ footer p {
 }
 
 .footer-icon {
-    padding: 2rem 0;
+    padding: 2rem 0 0 0;
 }
 .footer-icon a {
     font-size: 1.25rem;
     margin: 0 1rem;
     text-decoration: none;
+}
+
+.footer-icon p {
+    font-size: 0.75rem;
+    padding-bottom: 0.5rem;
+    padding-top: 2rem;
 }
 
 .button {
@@ -122,14 +133,6 @@ footer p {
 .button:active {
     background-color: #f4f1e5;
 }
-#email {
-    background-color: white;
-    border: none;
-}
-#email:active {
-    background-color: white;
-    border-color: white;
-}
 
 @media only screen and (max-width: 480px) {
     footer {
@@ -137,3 +140,11 @@ footer p {
         margin: 0 auto;
     }
 }
+/*-----------------hero-------------------*/
+
+.hero {
+    height: 1080px;
+    background-color: wheat;
+}
+
+/*-----------------case-------------------*/
