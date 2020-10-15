@@ -235,6 +235,7 @@ a.button:active {
     height: 300px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     border-bottom: 3px solid #EDECEA;
@@ -322,6 +323,9 @@ a.button:active {
     }
     .menu p {
         margin: 1rem;
+    }
+    .case .container {
+        justify-content: center;
     }
     
 }
