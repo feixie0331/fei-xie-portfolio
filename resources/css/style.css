@@ -12,9 +12,12 @@ body {
 }
 
 header {
-    padding: 2rem;
+    width: 100%;
+    
+    padding: 2rem 0;
     position: fixed;
     top: 0;
+    z-index: 100;
         }
 main {
     position: relative;
@@ -26,21 +29,28 @@ footer {
     top: 97px;
     text-align: center;
 }
-
 a {
-            color: black;
+    color: #222222;
+    text-decoration: none;
+}
+.menu a {
+            color: #858585;
             text-decoration: none;
-        }
+}
+.menu .active {
+    color: #222222;
+}
 /*-------------nav bar---------------------*/
 nav {
-    
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
 nav h3 {
-    margin: 0 6rem;
+    
     font-size: 1.50625rem;
 }
 
@@ -48,12 +58,16 @@ nav .menu {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 2rem;
+    
 }
 .menu p {
-    margin: 0 3rem;
+    margin-left: 2rem;
 }
 
+
+a.active {
+    color: #222222;
+}
 @media only screen and (min-width: 481px) {
     nav img {
         display: none;
@@ -61,13 +75,20 @@ nav .menu {
 }
 @media only screen and (max-width: 480px) {
     header {
-        padding: 1rem 1rem;
+        padding:0;
+    }
+    main {
+        position: relative;
+        top: 54px;
+    }
+    
+    footer {
+        position: relative;
+        top: 54px;
+        
     }
     nav h3 {
         display: none;
-    }
-    nav img {
-        margin-left: 1rem;
     }
     nav .menu {
         padding: 0;
@@ -105,6 +126,7 @@ footer p {
     padding: 2rem 0 0 0;
 }
 .footer-icon a {
+    color: #222222;
     font-size: 1.25rem;
     margin: 0 1rem;
     text-decoration: none;
