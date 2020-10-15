@@ -1,0 +1,124 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: auto 1fr auto;
+    font-family: 'Open Sans', sans-serif;
+    color: #222222;
+}
+
+header {
+    padding: 2rem;
+        }
+
+
+/*-------------nav bar---------------------*/
+nav {
+    
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav h3 {
+    margin: 0 8rem;
+    font-size: 1.50625rem;
+}
+
+nav .menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6rem;
+}
+.menu p {
+    margin: 0 2rem;
+}
+
+@media only screen and (min-width: 481px) {
+    nav img {
+        display: none;
+    }
+}
+@media only screen and (max-width: 480px) {
+    header {
+        padding: 1rem 1rem;
+    }
+    nav h3 {
+        display: none;
+    }
+    nav img {
+        margin-left: 1rem;
+    }
+    nav .menu {
+        padding: 0;
+    }
+    .menu p {
+        margin: 1rem;
+    }
+}
+
+/*-----------footer---------------*/
+footer {
+    line-space: 5px;
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+
+}
+
+footer h3 {
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    font-family: 'Comic Neue', cursive;
+}
+
+footer p {
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding: 1rem 0 2rem 0;
+}
+
+footer a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-text a {
+    font-size: 1rem;
+    margin: 1rem 0;
+    
+}
+
+.footer-icon {
+    padding: 2rem 0;
+}
+.footer-icon a {
+    font-size: 1.25rem;
+    margin: 0 1rem;
+    text-decoration: none;
+}
+
+.button {
+    padding: 5px 20px;
+    box-sizing: border-box;
+    background-color: #f0decd;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform:uppercase;
+    color: #34332e;
+    transition: background-color 0.45s ease-in 350ms, color 0.45s ease-in-out 350ms;
+}
+.button:hover {
+    color: #F8F6EA;
+    background-color: #888354;
+}
+.button:active {
+    background-color: #f4f1e5;
+}
