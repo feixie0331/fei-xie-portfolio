@@ -224,16 +224,15 @@ a.button:active {
 }
 
 
-/*-----------------case-------------------*/
+/*-----------------About me-------------------*/
 
 .case .text {
     text-align: center;
     border-top: 3px solid #EDECEA;
     
 }
-.case .container {
+.container {
     width: 100%;
-    height: 300px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -241,15 +240,16 @@ a.button:active {
     margin-bottom: 2rem;
     border-bottom: 3px solid #EDECEA;
 }
-.case .left {
+.left {
+    flex-shrink: 3;
     box-sizing: border-box;
     margin-right: 2rem;
-    max-width: 60%;
+    max-width: 50%;
     overflow: hidden;
 }
-.case .right {
+.right {
     max-width: 40%;
-    overflow: hidden;
+
 }
 .case img {
     max-width: 100%;
@@ -259,6 +259,9 @@ a.button:active {
 }
 .case h3 {
     padding: 0 0 1rem 0;
+}
+.case p {
+    line-height: 150%;
 }
 
 /*---------------responsive-----------*/
