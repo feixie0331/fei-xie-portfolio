@@ -244,16 +244,20 @@ a.button:active {
     flex-shrink: 3;
     box-sizing: border-box;
     margin-right: 2rem;
-    max-width: 50%;
+    width: 50%;
     overflow: hidden;
+    
 }
+
 .right {
-    max-width: 40%;
+    width: 40%;
 
 }
 .case img {
+    margin: 0 auto;
+    padding: 2rem;
     max-width: 100%;
-    height: auto;
+    max-height: auto;
     display: block;
 
 }
