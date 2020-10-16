@@ -186,19 +186,19 @@ a.button:active {
     grid-column: 1 / span 12;
 }
 #understand {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2018/07/9-coffee-watercolor-brush-stroke-2.png');
+    background-image: url('../images/understand.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #empathize {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2018/01/maroon-purple-watercolor-brush-stroke-6.png');
+    background-image: url('../images/empathize.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #design {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2017/05/colorful-watercolor-brush-stroke-banner-2-30.png');
+    background-image: url('../images/design.png');
     background-position: left;
     background-repeat: repeat;
     background-size: cover;
@@ -214,7 +214,7 @@ a.button:active {
     margin-top: 0;
     text-indent: 6em;
     font-family: 'Ma Shan Zheng', cursive;
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2017/04/watercolor-brush-stroke-banner-var-18.png');
+    background-image: url('../images/fei.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
