@@ -279,7 +279,7 @@ img {
     .mobile {
         display: none;
     }
-    .hero {
+    /*.hero {
         margin-top: 5rem;
     }
     .hero p {
@@ -298,14 +298,28 @@ img {
     .hero .container {
         display: flex;
         flex-direction: column;
-    }
+    }*/
     
     header {
         padding:0;
 
     }
+    nav {
+        width: 100%;
+    }
+    nav .logo {
+        margin-left: 1rem;
+    }
     nav .menu {
         margin-right: 0;
+        padding: 0;
+    }
+    nav h3 {
+        display: none;
+    }
+    
+    .menu p {
+        margin: 0.8rem;
     }
     main {
         width: 100%;
@@ -318,18 +332,15 @@ img {
         top: 54px;
         
     }
-    nav h3 {
-        display: none;
-    }
-    nav .menu {
-        padding: 0;
-    }
-    .menu p {
-        margin: 1rem;
-    }
+    
     .case .container {
         justify-content: center;
         flex-direction: column;
     }
-    
+    .profile {
+        margin: 1rem 0;
+    }
+    .intro {
+        width: 90%;
+    }
 }
