@@ -174,10 +174,10 @@ a.button:active {
     color: #30302F;
 }
 .text h2 {
-    position: -webkit-sticky;
+/*    position: -webkit-sticky;
     position: sticky;
     z-index: 99;
-    top: 60px;
+    top: 60px;*/
     font-weight: 300;
     font-family: 'Roboto Condensed', sans-serif;
     padding: 2rem 0;
@@ -298,21 +298,29 @@ a.button:active {
     }
     
     header {
-        padding:0;
+        padding:1rem 0;
 
+    }
+    nav {
+        width: 100%;
+    }
+    nav .logo {
+        margin-left: 1rem;
     }
     nav .menu {
         margin-right: 0;
+        padding: 0;
     }
+    
     main {
         width: 100%;
         position: relative;
-        top: 54px;
+        top: 76.59px;
     }
     
     footer {
         position: relative;
-        top: 54px;
+        top: 76.59px;
         
     }
     nav h3 {
@@ -322,7 +330,7 @@ a.button:active {
         padding: 0;
     }
     .menu p {
-        margin: 1rem;
+        margin: 0.8rem;
     }
     .case .container {
         justify-content: center;

@@ -251,7 +251,7 @@ img {
 .col-container {
     display: inline-flex;
     flex-direction: column;
-    flex-basis: 368px;
+    flex:0 2 368px;
 
 }
 
@@ -261,17 +261,24 @@ img {
     height: auto;
     overflow: hidden;
     flex-shrink: 1;
+    
     margin-bottom: 1rem;
     opacity: 0.7;
     
 }
 .gallery__item:hover{
-    opacity: 0.9;
+    opacity: 1;
+    
 }
 .gallery_item img {
     max-width: 100%;
     height: auto;
     display: block;
+    object-fit: cover;
+	transition: transform 700ms ease-out;
+}
+img:hover {
+    transform: scale(1.15);
 }
 
 /*---------------responsive-----------*/
@@ -279,29 +286,9 @@ img {
     .mobile {
         display: none;
     }
-    /*.hero {
-        margin-top: 5rem;
-    }
-    .hero p {
-        grid-column: 2 / span 10;
-        font-size: 1rem;
-    }
-    .hero h1 {
-        text-align: center;
-        margin: 1rem 0;
-        font-size: 3rem;
-    }
-    .hero h2{
-        font-size: 1.5rem;
-        text-align: center;
-    }
-    .hero .container {
-        display: flex;
-        flex-direction: column;
-    }*/
     
     header {
-        padding:0;
+        padding: 1rem 0;
 
     }
     nav {
@@ -324,12 +311,12 @@ img {
     main {
         width: 100%;
         position: relative;
-        top: 54px;
+        top: 76.59px;
     }
     
     footer {
         position: relative;
-        top: 54px;
+        top: 76.59px;
         
     }
     
@@ -343,4 +330,23 @@ img {
     .intro {
         width: 90%;
     }
+    .gallery {
+        justify-items: center;
+    }
+    .col-container {
+        flex-basis: 100%;
+    
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    img:hover {
+        transform: scale(1);
+        
+    }
+    .gallery__item {
+        opacity: 0.9;
+    }
+
 }
