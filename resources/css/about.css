@@ -13,8 +13,8 @@ body {
     display: grid;
     height: 100vh;
     grid-template-rows: auto 1fr auto;
-    color: #30302F;
-    background-color: #F2F0EB;
+    color: #594a4e;
+    background-color: #FFFFFE;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -25,7 +25,7 @@ header {
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #EDECEA;
+    background-color: #eff0f3;
         }
 main {
     position: relative;
@@ -40,22 +40,24 @@ footer {
     text-align: center;
 }
 a {
-    color: #222222;
+    color:#0d0d0d;
     text-decoration: none;
 }
 .menu a {
-            color: #858585;
+            color: #797979;
             text-decoration: none;
 }
 .menu .active {
-    color: #222222;
+    color: #0d0d0d;
 }
 
 h1 {
     font-size: 4rem;
+    color: #33272a;
 }
 h2 {
     font-size: 2rem;
+    color: #33272a;
 }
 /*-------------nav bar---------------------*/
 nav {
@@ -69,6 +71,7 @@ nav {
 nav h3 {
     margin-left: 1rem;
     font-size: 1.50625rem;
+    color: #33272a;
 }
 
 nav .menu {
@@ -118,7 +121,7 @@ footer p {
     padding: 2rem 0 0 0;
 }
 .icon a {
-    color: #222222;
+    color: #33272a;
     font-size: 1.25rem;
     margin: 0 1rem;
     text-decoration: none;
@@ -167,7 +170,7 @@ a.button:active {
     font-weight: 700;
     grid-column: 1 / span 12;
     margin-top: 2rem;
-    color: #30302F;
+    color: #33272a;
 }
 .text h2 {
     position: -webkit-sticky;
@@ -195,7 +198,7 @@ a.button:active {
 
 .case .text {
     text-align: center;
-    border-top: 3px solid #EDECEA;
+    /*border-top: 3px solid #EDECEA;*/
     
 }
 .container {
@@ -206,24 +209,27 @@ a.button:active {
     flex-wrap: wrap;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #EDECEA;
+    /*border-bottom: 3px solid #EDECEA;*/
 }
 .profile {
     flex-shrink: 3;
     width: 30%;
     overflow: hidden;
+    margin: 0 auto;
     
 }
 
 .intro {
-    width: 60%;
+    width: 50%;
+    margin: 0 auto;
 
 }
 img {
-    margin: 0 auto;
+    
     max-width: 100%;
     max-height: auto;
     display: block;
+    margin: 0 auto;
 
 }
 .case h3 {
@@ -265,11 +271,13 @@ img {
     flex-shrink: 1;
     
     margin-bottom: 1rem;
-    opacity: 0.7;
+    opacity: 0.8;
+    box-shadow: 3px 7px 20px 1px rgba(51,39,42,0.2);
     
 }
 .gallery__item:hover{
     opacity: 1;
+    
     
 }
 .gallery_item img {
@@ -348,7 +356,7 @@ img:hover {
         
     }
     .gallery__item {
-        opacity: 0.9;
+        opacity: 1;
     }
 
 }
