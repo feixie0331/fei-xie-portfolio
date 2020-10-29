@@ -58,6 +58,7 @@ h1 {
 h2 {
     font-size: 2rem;
     color: #33272a;
+    
 }
 /*-------------nav bar---------------------*/
 nav {
@@ -126,7 +127,10 @@ footer p {
     margin: 0 1rem;
     text-decoration: none;
 }
-
+#kafe {
+    font-size: 0.75rem;
+    text-decoration: underline;
+}
 .icon p {
     font-size: 0.75rem;
     padding-bottom: 0.5rem;
@@ -178,7 +182,7 @@ a.button:active {
     z-index: 99;
     top: 60px;
     font-weight: 300;
-    font-family: 'Roboto Condensed', sans-serif;
+    
     padding: 2rem 0;
     margin-bottom: 2rem;
     grid-column: 1 / span 12;
