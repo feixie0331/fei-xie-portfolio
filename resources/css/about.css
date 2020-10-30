@@ -169,15 +169,15 @@ a.button:active {
     
     display: flex;
     justify-content: center;
+    background-color:  rgba(252, 220, 220, 0.5);
     
 }
 .text h2 {
     
-    border: 3px dotted #2723433a;
-    border-radius: 15px;
+    
     padding: 2rem 4rem;
     Font-Family: 'Istok Web', Sans-Serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     line-height: 2rem;
     letter-spacing: 1px;
 }
@@ -220,7 +220,7 @@ img {
 .case h3 {
     padding: 0 0 1rem 0;
     Font-Family: 'Istok Web', Sans-Serif;
-    Font-Size: 2rem;
+    Font-Size: 1.75rem;
 }
 .case p {
     
