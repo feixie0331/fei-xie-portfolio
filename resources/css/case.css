@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
     padding: 0;
@@ -25,17 +24,16 @@ header {
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #fffffeb8;
+    background-color: #eff0f3;
         }
 main {
     position: relative;
-    top: 93px;
-    width: 100%;
+    top: 97px;
+    width: 80%;
     margin: 0 auto;
 }
 
 footer {
-    width: 100%;
     position: relative;
     top: 97px;
     text-align: center;
@@ -56,7 +54,11 @@ h1 {
     font-size: 4rem;
     color: #33272a;
 }
-
+h2 {
+    font-size: 2rem;
+    color: #33272a;
+    
+}
 /*-------------nav bar---------------------*/
 nav {
     width: 80%;
@@ -98,7 +100,7 @@ footer h3 {
     padding: 1rem 0;
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: 'Istok Web', Sans-Serif;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
 footer p {
@@ -165,37 +167,55 @@ a.button:active {
     }
 }
 /*-----------------hero-------------------*/
-.text {
-    
-    display: flex;
-    justify-content: center;
-    
+
+.text h1 {
+    font-family:'Roboto Condensed', sans-serif;
+    font-weight: 700;
+    grid-column: 1 / span 12;
+    margin-top: 2rem;
+    color: #33272a;
 }
 .text h2 {
+    position: -webkit-sticky;
+    position: sticky;
+    z-index: 99;
+    top: 60px;
+    font-weight: 300;
     
-    border: 3px dotted #2723433a;
-    border-radius: 15px;
-    padding: 2rem 4rem;
-    Font-Family: 'Istok Web', Sans-Serif;
-    font-size: 1.5rem;
-    line-height: 2rem;
-    letter-spacing: 1px;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    grid-column: 1 / span 12;
 }
+
+.text p {
+    font-size: 1.25rem;
+    padding: 2rem 0;
+    grid-column: 1 / span 8;
+    text-align: justify;
+    }
+
+
+
 
 /*-----------------About me-------------------*/
 
-
+.case .text {
+    text-align: center;
+    /*border-top: 3px solid #EDECEA;*/
+    
+}
 .container {
-    width: 80%;
-    margin: 4rem auto;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    
+    padding-bottom: 2rem;
+    margin-bottom: 2rem;
+    /*border-bottom: 3px solid #EDECEA;*/
 }
-
 .profile {
+    flex-shrink: 3;
     width: 30%;
     overflow: hidden;
     margin: 0 auto;
@@ -215,33 +235,25 @@ img {
     margin: 0 auto;
 
 }
-
-
 .case h3 {
     padding: 0 0 1rem 0;
-    Font-Family: 'Istok Web', Sans-Serif;
-    Font-Size: 2rem;
 }
 .case p {
-    
     line-height: 150%;
 }
 
 /*------------gallery------------*/
 .text-gallery{
-    
     text-align: center;
-    font-family: 'Istok Web', Sans-Serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-size: 1.25rem;
     padding: 2rem 0;
 }
 .gallery {
-    width: 80%;
-    margin: 0 auto;
     display: flex;
     overflow: hidden;
     align-content: baseline;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
@@ -278,7 +290,7 @@ img {
     object-fit: cover;
 	transition: transform 700ms ease-out;
 }
-.gallery__item img:hover {
+img:hover {
     transform: scale(1.15);
 }
 
@@ -320,16 +332,13 @@ img {
         top: 76.59px;
         
     }
-    .text h2 {
-        padding: 2rem 1rem;
-    }
+    
     .case .container {
         justify-content: center;
         flex-direction: column;
     }
     .profile {
-        width: 80%;
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
     .intro {
         width: 90%;
@@ -345,7 +354,7 @@ img {
 }
 
 @media only screen and (max-width: 1024px) {
-    .gallery__item img:hover {
+    img:hover {
         transform: scale(1);
         
     }
@@ -353,16 +362,4 @@ img {
         opacity: 1;
     }
 
-}
-
-@media only screen and (min-width:1920px) {
-    body {
-        
-        width: 1920px;
-        margin: 0 auto;
-    }
-    header {
-        width: 1920px;
-        margin: 0 auto;
-    }
 }

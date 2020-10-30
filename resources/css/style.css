@@ -8,24 +8,22 @@ body {
     height: 100vh;
     grid-template-rows: auto 1fr auto;
     color: #30302F;
-    background-color: #F2F0EB;
+    background-color: #fffffe;
     font-family: 'Montserrat', sans-serif;
 }
 
 header {
     width: 100%;
-    
     padding: 2rem 0;
     position: fixed;
     top: 0;
     z-index: 100;
-    background-color: #EDECEA;
+    background-color: #fffffeb8;
         }
 main {
     position: relative;
-    top: 97px;
-    width: 80%;
-    margin: 0 auto;
+    top: 93px;
+    width: 100%;
 }
 
 footer {
@@ -46,7 +44,7 @@ a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 4.5rem;
 }
 h2 {
     font-size: 2rem;
@@ -161,59 +159,72 @@ a.button:active {
 /*-----------------hero-------------------*/
 
 .hero {
+    width: 100%;
     margin-bottom: 4rem;
 }
-.hero .text {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-
-    
-
+.hero h2 {
+    font-weight: 300;
+    font-family: 'Istok Web', Sans-Serif;
+    padding: 2rem 0;
+    text-align: center;
 }
+.hero .text {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .text h1 {
-    font-family:'Roboto Condensed', sans-serif;
-    font-weight: 700;
-    grid-column: 4 / span 12;
+    flex: 1 1 auto;
+    padding: 2rem 0 2rem 10%;
+    font-family: 'Istok Web', Sans-Serif;
     margin-top: 2rem;
     color: #30302F;
+    text-align: left;
 }
-.text h2 {
-/*    position: -webkit-sticky;
-    position: sticky;
-    z-index: 99;
-    top: 60px;*/
-    font-weight: 300;
-    font-family: 'Roboto Condensed', sans-serif;
-    padding: 2rem 0;
-    margin-bottom: 2rem;
-    grid-column: 1 / span 12;
-}
-/*#understand {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2018/07/9-coffee-watercolor-brush-stroke-2.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#empathize {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2018/01/maroon-purple-watercolor-brush-stroke-6.png');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-#design {
-    background-image: url('https://www.onlygfx.com/wp-content/uploads/2017/05/colorful-watercolor-brush-stroke-banner-2-30.png');
-    background-position: left;
-    background-repeat: repeat;
-    background-size: cover;
-}*/
-.text p {
-    font-size: 1.25rem;
-    padding: 2rem 0;
-    margin-top: 3rem;
-    grid-column: 2 / span 12;
-    text-align: justify;
-    }
 
+
+
+ul.values {
+    flex: 1 2 auto;
+    font-size: 1.2rem;
+    text-align: left;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-items: center; 
+    
+    }
+ul.values > li {
+    padding: 1rem;
+    margin: 1rem 0;
+    flex: 1 2 auto;
+    text-align: left;
+    
+}
+ul.values > li:nth-child(1) {
+    background-color:rgba(251, 247, 215, 0.5);
+
+}
+ul.values > li:nth-child(2) {
+    background-color: rgba(244, 247, 219, 0.5);
+}
+ul.values > li:nth-child(3) {
+    background-color:rgba(249, 237, 219, 0.5);
+}
+ul.values > li:nth-child(4) {
+    background-color: rgba(225, 244, 244, 0.5);
+}
+
+.hero .container {
+    width: 80%;
+    margin: 2rem auto;
+}
 #xie {
     margin-top: 0;
     text-indent: 6em;
@@ -232,17 +243,19 @@ a.button:active {
 
 .case .text {
     text-align: center;
-    border-top: 3px solid #EDECEA;
+    
     
 }
 .case .container {
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     height: 300px;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     padding-bottom: 2rem;
     margin-bottom: 2rem;
+    border-top: 3px solid #EDECEA;
     border-bottom: 3px solid #EDECEA;
 }
 .case .left {
@@ -261,6 +274,13 @@ a.button:active {
     display: block;
 
 }
+.case h2 {
+    font-weight: 300;
+    font-family: 'Istok Web', Sans-Serif;
+    padding: 2rem 0;
+    margin-bottom: 2rem;
+    text-align: center;
+}
 .case h3 {
     padding: 0 0 1rem 0;
 }
@@ -273,16 +293,17 @@ a.button:active {
     .hero {
         margin-top: 5rem;
     }
+
     .hero p {
-        grid-column: 2 / span 10;
         font-size: 1rem;
         margin-top: 0;
     }
     .hero h1 {
         text-align: center;
-        grid-column: 2 / span 10;
         margin: 1rem 0;
         font-size: 3rem;
+        padding-left: 0;
+        padding-right: 0;
     }
     .hero h2{
         font-size: 1.5rem;
@@ -343,4 +364,16 @@ a.button:active {
         justify-content: center;
     }
     
+}
+
+@media only screen and (min-width:1920px) {
+    body {
+        
+        width: 1920px;
+        margin: 0 auto;
+    }
+    header {
+        width: 1920px;
+        margin: 0 auto;
+    }
 }
