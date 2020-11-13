@@ -50,6 +50,7 @@ a {
 }
 .menu .active {
     color: #0d0d0d;
+    text-decoration: underline;
 }
 
 h1 {

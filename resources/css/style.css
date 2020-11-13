@@ -41,6 +41,7 @@ a {
 }
 .menu .active {
     color: #222222;
+    text-decoration: underline;
 }
 
 h1 {
