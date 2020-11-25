@@ -178,8 +178,59 @@ a.button:active {
 }
 
 
-/*-----------------About me-------------------*/
+/*-----------------Case-------------------*/
+.banner {
+    display: flexbox;
+    background-color: gray;
+}
+.app-name {
+    grid-area: app-name;
+    text-align: center;
+}
 
+.app-img {
+    grid-area: image;
+}
+.description {
+    grid-area: description;
+    display: grid;
+    grid-row-gap: 20px;
+    grid-template-areas: "card-role"
+                        "card-tool"
+                        "card-platform"
+                        "card-timeline";
+    grid-template-columns: 1fr;
+}
+.card-role {
+    grid-area: card-role;
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-rows: 1fr;
+}
+.card-tool {
+    grid-area: card-tool;
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-rows: 1fr;
+}
+.card-platform {
+    grid-area: card-platform;
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-rows: 1fr;
+}
+.card-timeline {
+    grid-area: card-timeline;
+    display: grid;
+    grid-template-areas: "left right";
+    grid-template-rows: 1fr;
+}
+.left {
+    grid-area: left;
+}
+.right {
+    grid-area: right;
+}
 
 
 
