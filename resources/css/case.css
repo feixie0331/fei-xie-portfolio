@@ -55,8 +55,9 @@ a {
 }
 
 h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #33272a;
+    
 }
 
 h2 {
@@ -179,22 +180,38 @@ a.button:active {
 
 
 /*-----------------Case-------------------*/
-.banner {
-    display: flexbox;
-    background-color: gray;
-}
 .app-name {
-    grid-area: app-name;
     text-align: center;
+    margin: 2rem 0;
+    
 }
 
+.banner {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+
+
 .app-img {
-    grid-area: image;
+    flex: 1 2 40%;
+    height: 550px;
+    max-width: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    
+}
+
+.app-img img {
+    max-width: 100%;
+    height: auto;
+    display: block;
 }
 .description {
-    grid-area: description;
+    flex: 1 2 40%;
     display: grid;
     grid-row-gap: 20px;
+    grid-column-gap: 20px;
     grid-template-areas: "card-role"
                         "card-tool"
                         "card-platform"
