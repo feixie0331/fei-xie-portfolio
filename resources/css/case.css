@@ -17,12 +17,9 @@ body {
     font-family: 'Montserrat', sans-serif;
 }
 
-header {
+header .fixed-top {
     width: 100%;
-    
-    padding: 2rem 0;
-    position: fixed;
-    top: 0;
+    top: 24px;
     z-index: 100;
     background-color: #fffffeb8;
         }
@@ -71,37 +68,8 @@ h3 {
 }
 
 /*-------------nav bar---------------------*/
-nav {
-    width: 80%;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-nav h3 {
-    margin-left: 1rem;
-    font-size: 1.50625rem;
-    color: #33272a;
-}
-
-nav .menu {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin-right: 1rem;
-    
-}
-.menu p {
-    margin-left: 2rem;
-}
 
 
-@media only screen and (min-width: 481px) {
-    nav img {
-        display: none;
-    }
-}
 
 
 /*-----------footer---------------*/
@@ -171,12 +139,12 @@ a.button:active {
     background-color: #f4f1e5;
 }
 
-@media only screen and (max-width: 480px) {
+/*@media only screen and (max-width: 480px) {
     footer {
         max-width: 80%;
         margin: 0 auto;
     }
-}
+}*/
 
 
 /*-----------------Case-------------------*/
@@ -252,7 +220,8 @@ a.button:active {
 
 
 /*---------------responsive-----------*/
-@media only screen and (max-width: 480px) {
+
+/*@media only screen and (max-width: 480px) {
     .mobile {
         display: none;
     }
@@ -303,4 +272,4 @@ a.button:active {
         width: 1920px;
         margin: 0 auto;
     }
-}
+}*/
