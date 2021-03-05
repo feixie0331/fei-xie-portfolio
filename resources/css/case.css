@@ -27,12 +27,7 @@ header .fixed-top {
 main {
     position: relative;
     top: 93px;
-    /*
     
-    
-    width: 100%;
-    margin: 0 auto;*/
-    border-bottom: 3px solid #EDECEA;
 }
 
 footer {
@@ -40,6 +35,7 @@ footer {
     position: relative;
     top: 97px;
     text-align: center;
+    border-top: 3px solid #EDECEA;
 }
 a {
     color:#0d0d0d;
@@ -72,10 +68,7 @@ h3 {
 
 /*-------------nav bar---------------------*/
 
-.col-auto {
-    
-    justify-content: center;
-}
+
 .img-fluid {
     max-width: 50%;
     height: auto;
@@ -149,138 +142,3 @@ a.button:active {
     background-color: #f4f1e5;
 }
 
-/*@media only screen and (max-width: 480px) {
-    footer {
-        max-width: 80%;
-        margin: 0 auto;
-    }
-}*/
-
-
-/*-----------------Case-------------------*/
-/*
-.app-name {
-    text-align: center;
-    margin: 2rem 0;
-    
-}
-
-.banner {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 2rem auto;
-}
-
-
-.app-img {
-    flex: 1 2 40%;
-    height: 550px;
-    max-width: 50%;
-    margin: 0 auto;
-    overflow: hidden;
-    
-}
-
-.app-img img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-}
-.description {
-    flex: 1 2 40%;
-    display: grid;
-    grid-row-gap: 20px;
-    grid-column-gap: 20px;
-    grid-template-areas: "card-role"
-                        "card-tool"
-                        "card-platform"
-                        "card-timeline";
-    grid-template-columns: 1fr;
-}
-.card-role {
-    grid-area: card-role;
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-rows: 1fr;
-}
-.card-tool {
-    grid-area: card-tool;
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-rows: 1fr;
-}
-.card-platform {
-    grid-area: card-platform;
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-rows: 1fr;
-}
-.card-timeline {
-    grid-area: card-timeline;
-    display: grid;
-    grid-template-areas: "left right";
-    grid-template-rows: 1fr;
-}
-.left {
-    grid-area: left;
-}
-.right {
-    grid-area: right;
-}
-
-*/
-
-/*---------------responsive-----------*/
-
-/*@media only screen and (max-width: 480px) {
-    .mobile {
-        display: none;
-    }
-    
-    header {
-        padding: 1rem 0;
-
-    }
-    nav {
-        width: 100%;
-    }
-    nav .logo {
-        margin-left: 1rem;
-    }
-    nav .menu {
-        margin-right: 0;
-        padding: 0;
-    }
-    nav h3 {
-        display: none;
-    }
-    
-    .menu p {
-        margin: 0.8rem;
-    }
-    main {
-        width: 90%;
-        position: relative;
-        top: 76.59px;
-    }
-    
-    footer {
-        position: relative;
-        top: 76.59px;
-        
-    }
-    
-
-}
-
-@media only screen and (min-width:1920px) {
-    body {
-        
-        width: 1920px;
-        margin: 0 auto;
-    }
-    header {
-        width: 1920px;
-        margin: 0 auto;
-    }
-}*/
