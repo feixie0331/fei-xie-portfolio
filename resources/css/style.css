@@ -41,6 +41,7 @@ a {
 }
 .menu .active {
     color: #222222;
+    text-decoration: underline;
 }
 
 h1 {
@@ -89,7 +90,7 @@ footer h3 {
     padding: 1rem 0;
     font-size: 1.5rem;
     font-weight: 400;
-    font-family: 'Roboto Condensed', sans-serif;
+    
 }
 
 footer p {
